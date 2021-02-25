@@ -27,9 +27,9 @@ function convertirLetra(opcion){
 function ganar(opcionUser, opcionPc){
   userScore++;
   userScore_span.innerHTML= userScore;
-  const smallUser= "(USER)".fontsize(2);
-  const smallPc= "(PC)".fontsize(2);
-  result_div.innerHTML= convertirLetra(opcionUser)+smallUser+" le gana a "+convertirLetra(opcionPc)+smallPc+".<br> Tu ganaste!!";
+  const smallUser= "(Yo)".fontsize(2);
+  const smallPc= "(CPU)".fontsize(2);
+  result_div.innerHTML= convertirLetra(opcionUser)+smallUser+" le gana a "+convertirLetra(opcionPc)+smallPc+".<br> Has ganado!!";
   const userChoice_div= document.getElementById(opcionUser);
   const pcChoice_div= document.getElementById(opcionPc);
   userChoice_div.classList.add('verde');
@@ -42,10 +42,10 @@ function ganar(opcionUser, opcionPc){
 
 function pierda(opcionUser, opcionPc){
   compScore++;
-  compScore_span.innerHTML= compScore;
-  const smallUser= "(USER)".fontsize(2);
-  const smallPc= "(PC)".fontsize(2);
-  result_div.innerHTML= convertirLetra(opcionPc)+smallPc+" le gana a "+convertirLetra(opcionUser)+smallUser+".<br> Tu perdiste";
+  userScore_span.innerHTML= userScore;
+  const smallUser= "(Yo)".fontsize(2);
+  const smallPc= "(CPU)".fontsize(2);
+  result_div.innerHTML= convertirLetra(opcionPc)+smallPc+" le gana a "+convertirLetra(opcionUser)+smallUser+".<br> Has perdido";
   const userChoice_div= document.getElementById(opcionUser);
   const pcChoice_div= document.getElementById(opcionPc);
   userChoice_div.classList.add('rojo');
