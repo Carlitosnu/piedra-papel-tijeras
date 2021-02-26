@@ -16,7 +16,7 @@ function movidaComp(){
 }
 function convertirLetra(opcion){
   if (opcion == 'r'){
-    return "💎";
+    return "🌑";
   }else if (opcion == 'p') {
     return "📜";
   }else {
