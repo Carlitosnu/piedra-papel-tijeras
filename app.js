@@ -16,20 +16,20 @@ function movidaComp(){
 }
 function convertirLetra(opcion){
   if (opcion == 'r'){
-    return "Piedra ✊";
+    return "💎";
   }else if (opcion == 'p') {
-    return "Papel 🤚";
+    return "📜";
   }else {
-    return "Tijeras ✌";
+    return "✂️";
   }
 }
 
 function ganar(opcionUser, opcionPc){
   userScore++;
   userScore_span.innerHTML= userScore;
-  const smallUser= "(Yo)".fontsize(2);
+  const smallUser= "(USUARIO)".fontsize(2);
   const smallPc= "(CPU)".fontsize(2);
-  result_div.innerHTML= convertirLetra(opcionUser)+smallUser+" le gana a "+convertirLetra(opcionPc)+smallPc+".<br> Has ganado!!";
+  result_div.innerHTML= convertirLetra(opcionUser)+smallUser+" ha ganado a "+convertirLetra(opcionPc)+smallPc+"<br> Has ganado 😎";
   const userChoice_div= document.getElementById(opcionUser);
   const pcChoice_div= document.getElementById(opcionPc);
   userChoice_div.classList.add('verde');
@@ -42,10 +42,10 @@ function ganar(opcionUser, opcionPc){
 
 function pierda(opcionUser, opcionPc){
   compScore++;
-  userScore_span.innerHTML= userScore;
-  const smallUser= "(Yo)".fontsize(2);
+  compScore_span.innerHTML= compScore;
+  const smallUser= "(USUARIO)".fontsize(2);
   const smallPc= "(CPU)".fontsize(2);
-  result_div.innerHTML= convertirLetra(opcionPc)+smallPc+" le gana a "+convertirLetra(opcionUser)+smallUser+".<br> Has perdido";
+  result_div.innerHTML= convertirLetra(opcionPc)+smallPc+" ha ganado a "+convertirLetra(opcionUser)+smallUser+"<br> Has perdido 😧";
   const userChoice_div= document.getElementById(opcionUser);
   const pcChoice_div= document.getElementById(opcionPc);
   userChoice_div.classList.add('rojo');
@@ -57,7 +57,7 @@ function pierda(opcionUser, opcionPc){
 }
 
 function empate(opcionUser){
-  result_div.innerHTML= "Ambos eligierón "+convertirLetra(opcionUser)+".<br> Es un empate!!";
+  result_div.innerHTML= "Ambos eligierón "+convertirLetra(opcionUser)+"<br> Es un empate 😱!!";
   const opcion_div= document.getElementById(opcionUser);
   opcion_div.classList.add('gris');
   setTimeout(function(){
