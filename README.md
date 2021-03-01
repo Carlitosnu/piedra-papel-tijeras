@@ -5,4 +5,4 @@ Esto es un fork realizado por Robichani6 el cual trae diferencias con el proyect
 
 [Página web](https://robichani6-1.github.io/piedra-papel-tijeras/)
 
-[Foto del juego](https://imgur.com/a/kzVhKSs)
+[Foto del juego](https://i.imgur.com/Ida5WJE.png)
