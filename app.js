@@ -57,7 +57,7 @@ function pierda(opcionUser, opcionPc){
 }
 
 function empate(opcionUser){
-  result_div.innerHTML= "Ambos eligierón "+convertirLetra(opcionUser)+"<br> Es un empate 😱!!";
+  result_div.innerHTML= "Ambos eligieron "+convertirLetra(opcionUser)+"<br> Es un empate 😱!!";
   const opcion_div= document.getElementById(opcionUser);
   opcion_div.classList.add('gris');
   setTimeout(function(){
